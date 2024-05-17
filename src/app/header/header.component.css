@@ -1,0 +1,40 @@
+.onHover {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    position: relative;
+}
+
+.onHover::before,
+.onHover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+}
+
+.onHover::after {
+    top: 0;
+    left: 0;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.onHover::before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.onHover:hover::before,
+.onHover:hover::after {
+    width: 10px;
+    height: 10px;
+    border-color: var(--color-primary);
+}
