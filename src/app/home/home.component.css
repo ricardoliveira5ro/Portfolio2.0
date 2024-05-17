@@ -1,0 +1,7 @@
+.mailHover {
+    transition: 0.3s ease;
+}
+
+.mailHover:hover {
+    border-color: var(--color-primary);
+}
