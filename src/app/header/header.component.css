@@ -5,6 +5,7 @@
     padding: 10px 20px;
     margin: 0 5px;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .onHover::before,
@@ -37,4 +38,27 @@
     width: 10px;
     height: 10px;
     border-color: var(--color-primary);
+}
+
+.onHover:hover {
+    transform: translateY(-0.25rem);
+}
+
+.homeAnchor {
+    transition: transform 0.4s ease;
+    margin-right: 6px;
+}
+
+.homeAnchor:hover {
+    transform: translateY(-0.25rem);
+}
+
+.homeIcon {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.homeIcon:hover {
+    color: var(--color-primary);
+    transform: translateY(-0.25rem);
 }
