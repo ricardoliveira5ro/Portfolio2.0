@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700); 
-/* Styling */
 .timeline {
-    margin: 4em auto;
+    margin: 2em auto;
     position: relative;
-    max-width: 46em;
+    max-width: 43.1em;
 }
 .timeline:before {
     background-color: white;
@@ -18,9 +16,9 @@
 .timeline-event {
     position: relative;
 }
- .timeline-event:hover .timeline-event-icon {
-	 transform: rotate(-45deg);
-	 background-color: var(--color-primary);
+.timeline-event:hover .timeline-event-icon {
+    transform: rotate(-45deg);
+    background-color: var(--color-primary);
 }
 .timeline-event:hover .timeline-event-thumbnail {
     color: white;
@@ -33,7 +31,7 @@
     position: relative;
     top: -1.875em;
     left: 4em;
-    width: 80%;
+    width: 90%;
 }
 .timeline-event-copy h3 {
     color: white;
