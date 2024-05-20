@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
-import { NgFor, NgOptimizedImage } from '@angular/common';
-import { Project } from '../models/project.model';
-import { ProjectsService } from '../projects.service';
+import { NgOptimizedImage } from '@angular/common';
+import { ProjectsService } from '../../services/project/projects.service';
+import { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [LucideAngularModule, NgOptimizedImage, NgFor],
+  imports: [LucideAngularModule, NgOptimizedImage],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  projects: Project[];
+  projects: Project [];
 
-  constructor(private projectService: ProjectsService) {
+  constructor(projectService: ProjectsService) {
     this.projects = projectService.getProjects()
   }
 }
