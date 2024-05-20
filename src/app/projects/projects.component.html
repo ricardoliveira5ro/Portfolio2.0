@@ -5,33 +5,17 @@
     </div>
 
     <div class="grid grid-cols-2 gap-24">
-        <div class="flex flex-col max-w-[450px] items-start gap-4">
-            <img ngSrc="../../assets/currenSee.png" alt="Description of image" width="450" height="380">
+        <div *ngFor="let project of projects" class="flex flex-col max-w-[500px] items-start gap-4">
+            <img ngSrc='{{ project.imagePath }}' alt="Description of image" width="500" height="380" class="rounded-md">
             <div class="flex flex-row items-center gap-4">
-                <h3 class="fontStyleBold text-white text-center text-3xl">CurrenSee Tool</h3>
-                <a href="https://github.com/ricardoliveira5ro/Currency-Conversion-Tool" target="_blank" rel="noopener noreferrer">
+                <h3 class="fontStyleBold text-white text-center text-3xl">{{ project.name }}</h3>
+                <a href='{{ project.repositoryURL }}' target="_blank" rel="noopener noreferrer">
                     <lucide-icon name="braces" color="var(--color-primary)"></lucide-icon>
                 </a>
             </div>
-            <p class="fontStyleLight text-white text-justify text-base">Web app that allows users to easily convert amounts from one currency to another using real-time exchange rates</p>
+            <p class="fontStyleLight text-white text-justify text-base">{{ project.description }}</p>
             <ul class="flex flex-row gap-3">
-                <li class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">Next JS</li>
-                <li class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">Javascript</li>
-                <li class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">Tailwind CSS</li>
-            </ul>
-        </div>
-        <div class="flex flex-col max-w-[450px] items-start gap-4">
-            <img ngSrc="../../assets/currenSee_API.png" alt="Description of image" width="450" height="380">
-            <div class="flex flex-row items-center gap-4">
-                <h3 class="fontStyleBold text-white text-center text-3xl">CurrenSee API</h3>
-                <a href="https://github.com/ricardoliveira5ro/Currency-Conversion-API" target="_blank" rel="noopener noreferrer">
-                    <lucide-icon name="braces" color="var(--color-primary)"></lucide-icon>
-                </a>
-            </div>
-            <p class="fontStyleLight text-white text-justify text-base">Currency Conversion API provide real-time currency conversion rates between various currencies</p>
-            <ul class="flex flex-row gap-3">
-                <li class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">Node JS</li>
-                <li class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">Express JS</li>
+                <li *ngFor="let tag of project.tags" class="fontStyleRegular text-white text-base bg-[var(--color-primary)] px-3 py-1 rounded-md">{{ tag }}</li>
             </ul>
         </div>
     </div>
