@@ -5,6 +5,7 @@ import { SocialsBarComponent } from './socials-bar/socials-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsService } from './projects.service';
 
 
 @Component({
@@ -17,6 +18,9 @@ import { ProjectsComponent } from './projects/projects.component';
     SocialsBarComponent,
     TimelineComponent,
     ProjectsComponent
+  ],
+  providers: [
+    ProjectsService
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
