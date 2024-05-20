@@ -1,0 +1,27 @@
+<section class="flex flex-col w-full items-center justify-center gap-5">
+    <div class="flex flex-row items-center justify-center gap-2">
+        <lucide-icon name="briefcase-business" color="var(--color-primary)" size="32"></lucide-icon>
+        <h3 class="fontStyleBold text-white text-center text-4xl">Experience</h3>
+    </div>
+
+    <ul class="timeline">
+        @for (experience of experiences; track experience) {
+            <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail fontStyleRegular">{{ experience.dateInterval }}</p>
+                    <h3 class="fontStyleBold">{{ experience.title }}</h3>
+                    <h4 class="fontStyleRegular">{{ experience.employer }}</h4>
+                    
+                    @if (!experience.isEducation) {
+                        <p class="fontStyleLight"><strong class="fontStyleBold">Tasks:</strong><br>{{ experience.tasks }}</p>
+                        <p class="fontStyleLight"><strong class="fontStyleBold">Tech Stack:</strong><br>{{ experience.techStack.join(", ") }}</p>
+                    }
+                    @else {
+                        <p class="fontStyleLight"><strong class="fontStyleBold">Bachelor's Degree:</strong><br>{{ experience.techStack.join(", ") }}</p>
+                    }
+                </div>
+            </li>
+        }
+    </ul>
+</section>
