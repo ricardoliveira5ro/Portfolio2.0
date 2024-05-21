@@ -8,6 +8,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectsService } from './services/project/projects.service';
 import AOS from "aos";
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceService } from './services/experience/experience.service';
+import { SkillsService } from './services/skills/skills.service';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +24,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     SkillsComponent
   ],
   providers: [
-    ProjectsService
+    ProjectsService,
+    ExperienceService,
+    SkillsService
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
