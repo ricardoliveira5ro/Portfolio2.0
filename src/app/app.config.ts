@@ -3,12 +3,12 @@ import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
-import { LucideAngularModule, Send, Linkedin, Github, CodeXml, Home, BriefcaseBusiness, FolderGit2, Braces, Wand } from "lucide-angular";
+import { LucideAngularModule, Send, Linkedin, Github, CodeXml, Home, BriefcaseBusiness, FolderGit2, Braces, Wand, UserRound } from "lucide-angular";
 
 export const appConfig: ApplicationConfig = {
   providers: [
 		provideRouter(routes),
 		provideAnimations(),
-		importProvidersFrom(LucideAngularModule.pick({ Send, Linkedin, Github, CodeXml, Home, BriefcaseBusiness, FolderGit2, Braces, Wand }))
+		importProvidersFrom(LucideAngularModule.pick({ Send, Linkedin, Github, CodeXml, Home, BriefcaseBusiness, FolderGit2, Braces, Wand, UserRound }))
 	],
 };

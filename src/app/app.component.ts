@@ -10,6 +10,7 @@ import AOS from "aos";
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceService } from './services/experience/experience.service';
 import { SkillsService } from './services/skills/skills.service';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { SkillsService } from './services/skills/skills.service';
     SocialsBarComponent,
     TimelineComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   providers: [
     ProjectsService,
