@@ -7,6 +7,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectsService } from './services/project/projects.service';
 import AOS from "aos";
+import { SkillsComponent } from './components/skills/skills.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import AOS from "aos";
     HomeComponent,
     SocialsBarComponent,
     TimelineComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   providers: [
     ProjectsService
