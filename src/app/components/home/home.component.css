@@ -5,3 +5,52 @@
 .mailHover:hover {
     border-color: var(--color-primary);
 }
+
+@media (max-width: 1100px) {
+    .homeSection > h1 {
+        @apply text-6xl
+    }
+
+    .homeSection > h3 {
+        @apply text-3xl
+    }
+
+    .homeSection p {
+        @apply text-sm
+    }
+
+
+    @media (max-width: 700px) {
+        .homeSection > h1 {
+            @apply text-4xl
+        }
+
+        .homeSection > h3 {
+            @apply text-xl
+        }
+
+        .mailHover {
+            @apply px-2.5 py-1.5
+        }
+
+        .homeSection p {
+            @apply text-xs
+        }
+
+        .icon {
+            @apply hidden
+        }
+
+
+        @media (max-width: 350px) {
+            .homeSection > h1 {
+                @apply text-3xl
+            }
+
+            .homeSection > h3 {
+                @apply text-lg
+            }
+        }
+    }
+}
+

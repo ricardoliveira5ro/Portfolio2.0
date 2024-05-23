@@ -62,3 +62,31 @@
     color: var(--color-primary);
     transform: translateY(-0.25rem);
 }
+
+.main-menu {
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .headerSection li {
+        @apply text-lg;
+    }
+
+    @media (max-width: 800px) {
+        .headerSection {
+            @apply px-10;
+        }
+    
+        .headerSection > ul {
+            @apply justify-between;
+        }
+    
+        .main-menu {
+            @apply hidden;
+        }
+    
+        .side-menu {
+            @apply flex;
+        }
+    }
+}

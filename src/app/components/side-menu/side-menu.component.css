@@ -1,0 +1,15 @@
+@media (max-height: 430px) {
+    .side-menu-section > ul {
+        @apply gap-10
+    }
+
+    .side-menu-section > ul li {
+        @apply text-base
+    }
+}
+
+@media (max-width: 450px) {
+    .side-menu-section {
+        @apply w-[70%]
+    }
+}

@@ -1,9 +1,12 @@
-<app-header></app-header>
+<app-header (updatedInput)="getInput($event)"></app-header>
 <app-home></app-home>
 <app-socials-bar></app-socials-bar>
-<app-timeline></app-timeline>
+@if (childInput) {
+    <app-side-menu (closeSideMenu)="getInput(false)"></app-side-menu>
+}
+<!--<app-timeline></app-timeline>
 <app-projects></app-projects>
 <app-skills></app-skills>
 <app-contact></app-contact>
-<app-footer></app-footer>
+<app-footer></app-footer>-->
 <router-outlet />

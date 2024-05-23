@@ -14,3 +14,9 @@
 .social-icon:hover {
     color: var(--color-primary);
 }
+
+@media (max-width: 500px) {
+    .socials-section {
+        @apply hidden
+    }           
+}

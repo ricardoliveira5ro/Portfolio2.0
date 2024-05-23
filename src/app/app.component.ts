@@ -12,6 +12,8 @@ import { ExperienceService } from './services/experience/experience.service';
 import { SkillsService } from './services/skills/skills.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     RouterOutlet, 
     HeaderComponent,
+    SideMenuComponent,
     HomeComponent,
     SocialsBarComponent,
     TimelineComponent,
@@ -38,5 +41,13 @@ import { FooterComponent } from './components/footer/footer.component';
 export class AppComponent implements OnInit { 
   ngOnInit() {
     AOS.init();
+  }
+
+  childInput:boolean = false;
+
+  getInput(input: boolean) {
+    this.childInput = input;
+
+    input ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
   }
 }
