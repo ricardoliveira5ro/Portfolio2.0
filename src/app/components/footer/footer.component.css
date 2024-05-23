@@ -14,3 +14,27 @@
 .social-anchor > lucide-icon:hover  {
     color: var(--color-primary);
 }
+
+@media (max-width: 700px) {
+    .footer-section {
+        @apply px-12
+    }
+
+    
+    @media (max-width: 650px) {
+        .footer-section > div > p {
+            @apply text-base
+        }
+
+        .footer-section > div > p > span {
+            @apply text-base
+        }
+
+
+        @media (max-width: 400px) {
+            .footer-section > div > p > span {
+                @apply hidden
+            }
+        }
+    }
+}

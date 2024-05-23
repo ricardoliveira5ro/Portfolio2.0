@@ -1,10 +1,10 @@
-<section id="skills" class="flex flex-col w-full items-center justify-center gap-8 py-32">
+<section id="skills" class="flex flex-col w-full items-center justify-center gap-8 py-32 px-12">
     <div class="flex flex-row items-center justify-center gap-2" data-aos="fade-up" data-aos-duration="1000">
         <lucide-icon name="wand" color="var(--color-primary)" size="32"></lucide-icon>
-        <h3 class="fontStyleBold text-white text-center text-4xl">Skills</h3>
+        <h3 class="fontStyleBold text-white text-center text-4xl skills-title">Skills</h3>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-8 px-32">
+    <div class="flex flex-wrap justify-center gap-8 px-32 skills-list">
         @for (skill of skills; track skill; let index = $index) {
             <div class="flex items-center gap-4 rounded-md px-4 py-3 bg-[var(--color-secondary)]" 
                     data-aos="fade-up" 

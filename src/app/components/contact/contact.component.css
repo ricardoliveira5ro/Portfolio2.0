@@ -6,3 +6,39 @@
 .mailHover:hover > lucide-icon {
     color: var(--color-primary);
 }
+
+@media (max-width: 700px) {
+    #contact {
+        @apply px-12
+    }
+
+
+    @media (max-width: 650px) {
+        .contact-title {
+            @apply text-xl
+        }
+
+        .contact-text {
+            @apply text-base
+        }
+
+        .contact-email {
+            @apply text-sm
+        }
+
+        .icon {
+            @apply hidden
+        }
+
+        .mailHover {
+            @apply px-3 py-1.5
+        }
+
+
+        @media (max-width: 400px) {
+            .contact-text {
+                @apply text-sm
+            }
+        }
+    }
+}
