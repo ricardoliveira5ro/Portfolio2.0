@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
 
@@ -9,5 +10,9 @@ import { LucideAngularModule } from 'lucide-angular';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private viewportScroller: ViewportScroller) {}
 
+  public onScrollTo(elementId: string) {
+    this.viewportScroller.scrollToAnchor(elementId);
+  }
 }
