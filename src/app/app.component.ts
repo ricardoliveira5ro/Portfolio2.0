@@ -13,7 +13,6 @@ import { SkillsService } from './services/skills/skills.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
