@@ -1,0 +1,13 @@
+<div class="fixed w-[50%] z-50 h-screen top-0 right-0 bg-[var(--color-secondary)] side-menu-section" data-aos="fade-left" data-aos-duration="500">
+    <ul class="flex flex-col h-full items-center justify-center gap-20 p-12">
+        <a (click)="onCloseMenu()" class="cursor-pointer"><img ngSrc="../../../assets/close.png" width="38" height="38"></a>
+
+        <div class="flex flex-col items-center justify-center gap-6">
+            <a (click)="onScrollTo('home')" class="homeAnchor cursor-pointer"><lucide-icon name="home" color="var(--color-primary)"></lucide-icon></a>
+            <a (click)="onScrollTo('experience')" class="cursor-pointer"><li class="fontStyleLight text-white text-center text-xl onHover">Experience</li></a>
+            <a (click)="onScrollTo('projects')" class="cursor-pointer"><li class="fontStyleLight text-white text-center text-xl onHover">Projects</li></a>
+            <a (click)="onScrollTo('skills')" class="cursor-pointer"><li class="fontStyleLight text-white text-center text-xl onHover">Skills</li></a>
+            <a (click)="onScrollTo('contact')" class="cursor-pointer"><li class="fontStyleLight text-white text-center text-xl onHover">Contact</li></a>
+        </div>
+    </ul>
+</div>
