@@ -1,9 +1,9 @@
 <div class="fixed z-30 w-full px-12 py-6 bg-[var(--color-background)]">
     <ul class="flex items-center justify-center gap-8 mt-3">
-        <a href="" class="homeAnchor"><lucide-icon name="home" class="homeIcon"></lucide-icon></a>
-        <a href=""><li class="fontStyleLight text-white text-center text-xl onHover">Experience</li></a>
-        <a href=""><li class="fontStyleLight text-white text-center text-xl onHover">Projects</li></a>
-        <a href=""><li class="fontStyleLight text-white text-center text-xl onHover">Skills</li></a>
-        <a href=""><li class="fontStyleLight text-white text-center text-xl onHover">Contact</li></a>
+        <a (click)="onScrollTo('home')" class="homeAnchor"><lucide-icon name="home" class="homeIcon"></lucide-icon></a>
+        <a (click)="onScrollTo('experience')"><li class="fontStyleLight text-white text-center text-xl onHover">Experience</li></a>
+        <a (click)="onScrollTo('projects')"><li class="fontStyleLight text-white text-center text-xl onHover">Projects</li></a>
+        <a (click)="onScrollTo('skills')"><li class="fontStyleLight text-white text-center text-xl onHover">Skills</li></a>
+        <a (click)="onScrollTo('contact')"><li class="fontStyleLight text-white text-center text-xl onHover">Contact</li></a>
     </ul>
 </div>

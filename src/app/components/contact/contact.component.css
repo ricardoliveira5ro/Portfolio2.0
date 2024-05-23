@@ -1,0 +1,8 @@
+.mailHover > lucide-icon {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.mailHover:hover > lucide-icon {
+    color: var(--color-primary);
+}

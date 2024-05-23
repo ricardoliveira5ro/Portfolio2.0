@@ -1,0 +1,16 @@
+.social-anchor {
+    transition: transform 0.3s ease;
+}
+
+.social-anchor:hover {
+    transform: translateY(-0.25rem);
+}
+
+.social-anchor > lucide-icon {
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.social-anchor > lucide-icon:hover  {
+    color: var(--color-primary);
+}
