@@ -7,6 +7,9 @@ import { Experience } from '../../models/experience.model';
   selector: 'app-timeline',
   standalone: true,
   imports: [LucideAngularModule],
+  providers: [
+    ExperienceService
+  ],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css'
 })

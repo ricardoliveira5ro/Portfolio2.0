@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SocialsBarComponent } from './socials-bar.component';
+import { Github, LUCIDE_ICONS, Linkedin, LucideIconProvider } from 'lucide-angular';
 
 describe('SocialsBarComponent', () => {
   let component: SocialsBarComponent;
@@ -8,7 +9,11 @@ describe('SocialsBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SocialsBarComponent]
+      imports: [SocialsBarComponent],
+      providers: [
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Github: Github}), multi: true },
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Linkedin: Linkedin}), multi: true }
+      ],
     })
     .compileComponents();
     

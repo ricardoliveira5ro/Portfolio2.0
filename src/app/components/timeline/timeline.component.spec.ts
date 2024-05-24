@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TimelineComponent } from './timeline.component';
+import { BriefcaseBusiness, LUCIDE_ICONS, LucideIconProvider } from 'lucide-angular';
 
 describe('TimelineComponent', () => {
   let component: TimelineComponent;
@@ -8,7 +9,10 @@ describe('TimelineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TimelineComponent]
+      imports: [TimelineComponent],
+      providers: [
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({BriefcaseBusiness: BriefcaseBusiness}), multi: true }
+      ],
     })
     .compileComponents();
     

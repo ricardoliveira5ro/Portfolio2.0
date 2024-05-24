@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SkillsComponent } from './skills.component';
+import { LUCIDE_ICONS, LucideIconProvider, Wand } from 'lucide-angular';
 
 describe('SkillsComponent', () => {
   let component: SkillsComponent;
@@ -8,7 +9,10 @@ describe('SkillsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SkillsComponent]
+      imports: [SkillsComponent],
+      providers: [
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Wand: Wand}), multi: true }
+      ]
     })
     .compileComponents();
     

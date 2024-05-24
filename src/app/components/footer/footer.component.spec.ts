@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import { Github, LUCIDE_ICONS, Linkedin, LucideIconProvider } from 'lucide-angular';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,7 +9,11 @@ describe('FooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [FooterComponent],
+      providers: [
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Github: Github}), multi: true },
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Linkedin: Linkedin}), multi: true }
+      ],
     })
     .compileComponents();
     
