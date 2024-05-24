@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SideMenuComponent } from './side-menu.component';
+import { Home, LUCIDE_ICONS, LucideIconProvider } from 'lucide-angular';
 
 describe('SideMenuComponent', () => {
   let component: SideMenuComponent;
@@ -8,7 +9,10 @@ describe('SideMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SideMenuComponent]
+      imports: [SideMenuComponent],
+      providers: [
+        { provide: LUCIDE_ICONS, useValue: new LucideIconProvider({Home: Home}), multi: true }
+      ],
     })
     .compileComponents();
     

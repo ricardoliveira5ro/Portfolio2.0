@@ -29,11 +29,6 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     ContactComponent,
     FooterComponent
   ],
-  providers: [
-    ProjectsService,
-    ExperienceService,
-    SkillsService
-  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

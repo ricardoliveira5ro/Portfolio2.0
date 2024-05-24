@@ -8,6 +8,9 @@ import { SkillsService } from '../../services/skills/skills.service';
   selector: 'app-skills',
   standalone: true,
   imports: [LucideAngularModule, NgOptimizedImage],
+  providers: [
+    SkillsService
+  ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })

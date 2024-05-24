@@ -8,6 +8,9 @@ import { Project } from '../../models/project.model';
   selector: 'app-projects',
   standalone: true,
   imports: [LucideAngularModule, NgOptimizedImage],
+  providers: [
+    ProjectsService
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
