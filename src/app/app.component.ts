@@ -37,11 +37,11 @@ export class AppComponent implements OnInit {
     AOS.init();
   }
 
-  childInput:boolean = false;
+  isSideMenuOpen:boolean = false;
 
-  getInput(input: boolean) {
-    this.childInput = input;
+  toggleSideMenu(isOpen: boolean) {
+    this.isSideMenuOpen = isOpen;
 
-    input ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
+    isOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
   }
 }

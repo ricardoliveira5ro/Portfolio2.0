@@ -1,8 +1,8 @@
-<app-header (updatedInput)="getInput($event)"></app-header>
+<app-header (updatedSideMenuVisibility)="toggleSideMenu($event)"></app-header>
 <app-home></app-home>
 <app-socials-bar></app-socials-bar>
-@if (childInput) {
-    <app-side-menu (closeSideMenu)="getInput(false)"></app-side-menu>
+@if (isSideMenuOpen) {
+    <app-side-menu (closeSideMenu)="toggleSideMenu(false)"></app-side-menu>
 }
 <app-timeline></app-timeline>
 <app-projects></app-projects>

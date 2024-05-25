@@ -10,8 +10,8 @@ import { LucideAngularModule } from 'lucide-angular';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  @Input() inputFromParent: boolean = false;
-  @Output() updatedInput = new EventEmitter <boolean> ();
+  @Input() isSideMenuOpen: boolean = false;
+  @Output() updatedSideMenuVisibility = new EventEmitter <boolean> ();
 
   constructor(private viewportScroller: ViewportScroller) {}
 
@@ -20,6 +20,6 @@ export class HeaderComponent {
   }
 
   toggleSideMenu() {
-    this.updatedInput.emit(!this.inputFromParent)
+    this.updatedSideMenuVisibility.emit(!this.isSideMenuOpen)
   }
 }
