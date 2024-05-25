@@ -13,4 +13,8 @@ describe('ProjectsService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should have the correct amount of projects', () => {
+    expect(service.getProjects().length).toEqual(6);
+  });
 });
