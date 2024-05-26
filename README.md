@@ -2,11 +2,11 @@
 
 This website is designed to provide a detailed overview of my professional experiences and qualifications. It serves as an online resume and portfolio, highlighting the various personal projects I've worked on and the skills I've acquired. The website is also responsive for any device.
 
-### Visit my website
+### 🌐 Visit my website
 
-[roliveira.website](https://www.roliveira.website)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[roliveira.website](https://www.roliveira.website)
 
-### Tech stack and Packages
+### 🛠️ Tech stack and Packages
 
 * Angular (v17)
 * Typescript
@@ -15,7 +15,7 @@ This website is designed to provide a detailed overview of my professional exper
 * AOS
 * Karma (testing)
 
-### Run
+### 🚀 Run
 
 1. Clone the repository to your machine
 2. Run `npm install` to install all the dependencies and packages
