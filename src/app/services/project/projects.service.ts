@@ -24,7 +24,7 @@ export class ProjectsService {
       "CurrenSee Tool", 
       "../../assets/projects/currenSee.png", 
       "Web app that allows users to easily convert amounts from one currency to another using real-time exchange rates", 
-      ["Next JS", "Javascript", "Tailwind CSS"],
+      ["Next JS", "JavaScript", "Tailwind CSS"],
       "https://github.com/ricardoliveira5ro/Currency-Conversion-Tool"
     ),
     new Project(
@@ -45,8 +45,15 @@ export class ProjectsService {
       "Portfolio Website", 
       "../../assets/projects/portfolio.png", 
       "An interactive resume, describing my professional experiences, personal projects and information about me", 
-      ["Angular JS", "Typescript", "Tailwind CSS"],
+      ["Angular JS", "TypeScript", "Tailwind CSS"],
       "https://github.com/ricardoliveira5ro/Portfolio2.0"
+    ),
+    new Project(
+      "Translator Extension", 
+      "../../assets/projects/extension.png", 
+      "Browser extension that allows users to translate selected text on any webpage. When a user selects text, a Translate button appears next to the selection, allowing for quick and easy translation.", 
+      ["JavaScript", "HTML", "CSS"],
+      "https://github.com/ricardoliveira5ro/Translate-Extension"
     ),
   ];
 
