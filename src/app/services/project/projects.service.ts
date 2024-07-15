@@ -55,6 +55,13 @@ export class ProjectsService {
       ["JavaScript", "HTML", "CSS"],
       "https://github.com/ricardoliveira5ro/Translate-Extension"
     ),
+    new Project(
+      "PathwayAPI", 
+      "../../assets/projects/pathwayAPI.png", 
+      "PathwayAPI is RESTfull API designed to help users create, manage, and track personalized roadmaps for achieving various goals. Users can follow predefined roadmaps or create their own, breaking them down into manageable steps.", 
+      ["Ruby", "Ruby on Rails", "Postgresql", "REST API"],
+      "https://github.com/ricardoliveira5ro/PathwayAPI"
+    ),
   ];
 
   constructor() { }
