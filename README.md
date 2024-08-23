@@ -14,6 +14,7 @@ This website is designed to provide a detailed overview of my professional exper
 * Lucide Icons
 * AOS
 * Karma (testing)
+* Vercel (host)
 
 ### 🚀 Run
 
