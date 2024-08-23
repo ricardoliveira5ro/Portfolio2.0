@@ -62,6 +62,13 @@ export class ProjectsService {
       ["Ruby", "Ruby on Rails", "Postgresql", "REST API"],
       "https://github.com/ricardoliveira5ro/PathwayAPI"
     ),
+    new Project(
+      "PathwayAPI (GraphQL)", 
+      "../../assets/projects/pathwayAPI-graphQL.png", 
+      "GraphQL API designed to create, manage and track personalized roadmaps breaking them down into manageable steps", 
+      ["Ruby", "Ruby on Rails", "Postgresql", "GraphQL API"],
+      "https://github.com/ricardoliveira5ro/PathwayAPI-GraphQL"
+    ),
   ];
 
   constructor() { }
