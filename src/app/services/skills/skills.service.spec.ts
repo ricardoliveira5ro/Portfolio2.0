@@ -15,6 +15,6 @@ describe('SkillsService', () => {
   });
 
   it('should have the correct amount of skills', () => {
-    expect(service.getSkills().length).toEqual(12);
+    expect(service.getSkills().length).toEqual(14);
   });
 });
