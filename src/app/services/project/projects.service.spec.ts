@@ -15,6 +15,6 @@ describe('ProjectsService', () => {
   });
 
   it('should have the correct amount of projects', () => {
-    expect(service.getProjects().length).toEqual(8);
+    expect(service.getProjects().length).toEqual(9);
   });
 });
