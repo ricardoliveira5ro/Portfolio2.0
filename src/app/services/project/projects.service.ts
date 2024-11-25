@@ -7,6 +7,13 @@ import { Project } from '../../models/project.model';
 export class ProjectsService {
   private projects: Project[] = [
     new Project(
+      "Auto Match", 
+      "../../assets/projects/auto-match.png", 
+      "Fullstack web application for browsing, managing, and saving car listings in an online car dealership platform.", 
+      ["Java", "Spring Boot", "React", "Typescript", "Postgresql"],
+      "https://github.com/ricardoliveira5ro/AutoMatch"
+    ),
+    new Project(
       "PadelHub API", 
       "../../assets/projects/padelhubapi.png", 
       "PadelHub API is a RESTful API designed to manage padel club activities such as user registration, login, and reservations.", 
