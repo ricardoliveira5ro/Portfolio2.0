@@ -7,6 +7,13 @@ import { Project } from '../../models/project.model';
 export class ProjectsService {
   private projects: Project[] = [
     new Project(
+      "Symbols Pack", 
+      "../../assets/projects/symbols-pack.png", 
+      "(NPM Package) A helpful utility for accessing special characters and common symbols as plain text in any project", 
+      ["Node js"],
+      "https://github.com/ricardoliveira5ro/symbols-pack"
+    ),
+    new Project(
       "Auto Match", 
       "../../assets/projects/auto-match.png", 
       "Fullstack web application for browsing, managing, and saving car listings in an online car dealership platform.", 
