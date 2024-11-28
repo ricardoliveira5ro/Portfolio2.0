@@ -10,7 +10,7 @@ export class ProjectsService {
       "Symbols Pack", 
       "../../assets/projects/symbols-pack.png", 
       "(NPM Package) A helpful utility for accessing special characters and common symbols as plain text in any project", 
-      ["Node js"],
+      ["Node JS"],
       "https://github.com/ricardoliveira5ro/symbols-pack"
     ),
     new Project(

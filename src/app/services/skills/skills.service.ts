@@ -11,15 +11,16 @@ export class SkillsService {
     new Skill(3, "Ruby", "../../assets/skills/ruby.png"),
     new Skill(4, "Spring Boot", "../../assets/skills/spring-boot.png"),
     new Skill(5, "Javascript", "../../assets/skills/js.png"),
-    new Skill(6, "Angular", "../../assets/skills/angular.png"),
-    new Skill(7, "Typescript", "../../assets/skills/typescript.png"),
-    new Skill(8, "HTML", "../../assets/skills/html.png"),
-    new Skill(9, "CSS", "../../assets/skills/css.png"),
-    new Skill(10, "Tailwind CSS", "../../assets/skills/tailwindcss.png"),
-    new Skill(11, "Kotlin", "../../assets/skills/kotlin.png"),
-    new Skill(12, "Jetpack Compose", "../../assets/skills/jetpackcompose.png"),
-    new Skill(13, "SQL", "../../assets/skills/sql.png"),
-    new Skill(14, "Git", "../../assets/skills/git.png")
+    new Skill(6, "React", "../../assets/skills/react.png"),
+    new Skill(7, "Angular", "../../assets/skills/angular.png"),
+    new Skill(8, "Typescript", "../../assets/skills/typescript.png"),
+    new Skill(9, "HTML", "../../assets/skills/html.png"),
+    new Skill(10, "CSS", "../../assets/skills/css.png"),
+    new Skill(11, "Tailwind CSS", "../../assets/skills/tailwindcss.png"),
+    new Skill(12, "Kotlin", "../../assets/skills/kotlin.png"),
+    new Skill(13, "Jetpack Compose", "../../assets/skills/jetpackcompose.png"),
+    new Skill(14, "SQL", "../../assets/skills/sql.png"),
+    new Skill(15, "Git", "../../assets/skills/git.png")
   ];
 
   constructor() { }
