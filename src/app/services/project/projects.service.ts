@@ -7,6 +7,20 @@ import { Project } from '../../models/project.model';
 export class ProjectsService {
   private projects: Project[] = [
     new Project(
+      "Type Racer", 
+      "../../assets/projects/type-racer.png", 
+      "A real-time typing speed test game where users compete against others or practice random prompts, quotes and texts as fast and accurately as possible", 
+      ["Node JS", "React JS", "Socket IO", "Mongo DB"],
+      "https://github.com/ricardoliveira5ro/Type-Racer"
+    ),
+    new Project(
+      "Yahtzee Bot", 
+      "../../assets/projects/yahtzee.png", 
+      "Discord bot that allows users to play a Yahtzee game within their Discord server", 
+      ["Node JS"],
+      "https://github.com/ricardoliveira5ro/Yahtzee-Bot"
+    ),
+    new Project(
       "Symbols Pack", 
       "../../assets/projects/symbols-pack.png", 
       "(NPM Package) A helpful utility for accessing special characters and common symbols as plain text in any project", 
