@@ -4,7 +4,7 @@ This website is designed to provide a detailed overview of my professional exper
 
 ### 🌐 Visit my website
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[roliveira.website](https://www.roliveira.website)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[roliveira.online](https://www.roliveira.online)
 
 ### 🛠️ Tech stack and Packages
 
